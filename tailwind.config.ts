@@ -8,9 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#E2007A", //background color (Dark Pink)        
+        secondary: "#E83395", //background color (Light Pink)    
+        tertiary: "#BCBBBB", //background color (Gray)    
+        text: "#15000B", //paragraph color
+        primarybutton: "#FFE662", //button BG
+        primarybuttontext: "#E2007A", //button text color
+        secondaybuttontext: "#15000B", //secondary button text color
+        warning: "#fbbd23",
+        error: "#dc2626",
+      },
+      fontFamily: {
+        josefin: ["Josefin Sans", "sans"],
+        lato: ["Lato", 'sans-serif']
+      },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("@tailwindcss/typography")],
 
   daisyui: {
     themes: true, // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
