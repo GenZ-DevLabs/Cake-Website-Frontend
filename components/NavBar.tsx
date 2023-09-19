@@ -8,11 +8,21 @@ export default function NavBar() {
       </div>
       <div className="justify-center">
         <ul className="flex space-x-4 text-white mb-[8px] font-semibold">
-          <li className="inline-block">Home</li>
-          <li className="inline-block">Products</li>
-          <li className="inline-block">Special Offers</li>
-          <li className="inline-block">Delivery</li>
-          <li className="inline-block">About Us</li>
+          <li className="inline-block">
+            <a href="#">Home</a>
+          </li>
+          <li className="inline-block">
+            <a href="">Products</a>
+          </li>
+          <li className="inline-block">
+            <a href="#">Special Offers</a>
+          </li>
+          <li className="inline-block">
+            <a href="#">Delivery</a>
+          </li>
+          <li className="inline-block">
+            <a href="#">About Us</a>
+          </li>
         </ul>
         <div className="text-white w-full flex items-center justify-center">
           <input
