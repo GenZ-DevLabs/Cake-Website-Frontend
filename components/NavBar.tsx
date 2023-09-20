@@ -2,28 +2,94 @@ import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <nav className="bg-secondary flex items-center justify-between">
+    <nav className="bg-secondary flex items-center justify-between ">
       <div className="flex ml-[50px] lg:ml-[100px] 2xl:ml-[200px]">
         <Image src="/logo.png" alt="Logo" width={100} height={100} />
       </div>
       <div className="justify-center">
         <ul className="flex space-x-4 text-white mb-[8px] font-semibold">
-          <li className="inline-block">
-            <a href="#">Home</a>
+          <li>
+            <a href="#" className="hover:border-b-4 border-black">
+              Home
+            </a>
           </li>
-          <li className="inline-block">
-            <a href="">Products</a>
+          <li>
+            <div className="dropdown dropdown-hover">
+              <label tabIndex={0}>Products</label>
+              <ul
+                tabIndex={0}
+                className="dropdown-content z-[1] menu p-2 bg-white text-black rounded-box w-[550px] "
+              >
+                <li className="text-[20px] ml-[20px] mt-[10px]">
+                  Cakes
+                  <ul className="p-2 bg-white text-black rounded-box grid grid-cols-3 text-sm">
+                    <li>
+                      <a href="#">Wedding Cakes</a>
+                    </li>
+                    <li>
+                      <a href="#">Birthday Cakes</a>
+                    </li>
+                    <li>
+                      <a href="#">Gateau Cakes</a>
+                    </li>
+                    <li>
+                      <a href="#">Cup Cakes</a>
+                    </li>
+                    <li>
+                      <a href="#">Other Cakes</a>
+                    </li>
+                    <li>
+                      <a href="#">Custom Cakes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="text-[20px] ml-[20px] mt-[10px]">
+                  Party Accessories
+                  <ul className="p-2 bg-white text-black rounded-box grid grid-cols-3 text-sm">
+                    <li>
+                      <a href="#">Balloons</a>
+                    </li>
+                    <li>
+                      <a href="#">Cake Toppers</a>
+                    </li>
+                    <li>
+                      <a href="#">Number Candles</a>
+                    </li>
+                    <li>
+                      <a href="#">Hanging Banners</a>
+                    </li>
+                    <li>
+                      <a href="#">Party Plates/Cups</a>
+                    </li>
+                    <li>
+                      <a href="#">Party Hats</a>
+                    </li>
+                    <li>
+                      <a href="#">Party Poppers</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li className="inline-block">
-            <a href="#">Special Offers</a>
+
+          <li>
+            <a href="#" className="hover:border-b-4 border-black">
+              Special Offers
+            </a>
           </li>
-          <li className="inline-block">
-            <a href="#">Delivery</a>
+          <li>
+            <a href="#" className="hover:border-b-4 border-black">
+              Delivery
+            </a>
           </li>
-          <li className="inline-block">
-            <a href="#">About Us</a>
+          <li>
+            <a href="#" className="hover:border-b-4 border-black">
+              About Us
+            </a>
           </li>
         </ul>
+
         <div className="text-white w-full flex items-center justify-center">
           <input
             type="text"
