@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <nav className="bg-secondary flex items-center justify-between ">
+    <nav className="bg-secondary flex items-center justify-between">
       <div className="flex ml-[50px] lg:ml-[100px] 2xl:ml-[200px]">
         <Image src="/logo.png" alt="Logo" width={100} height={100} />
       </div>
       <div className="justify-center">
-        <ul className="flex space-x-4 text-white mb-[8px] font-semibold">
+        <ul className="flex space-x-4 text-white mb-[8px] font-semibold font-josefin">
           <li>
-            <a href="#" className="hover:border-b-4 border-black">
+            <a href="#" className="hover:border-b-2 border-black">
               Home
             </a>
           </li>
@@ -74,17 +74,17 @@ export default function NavBar() {
           </li>
 
           <li>
-            <a href="#" className="hover:border-b-4 border-black">
+            <a href="#" className="hover:border-b-2 border-black">
               Special Offers
             </a>
           </li>
           <li>
-            <a href="#" className="hover:border-b-4 border-black">
+            <a href="#" className="hover:border-b-2 border-black">
               Delivery
             </a>
           </li>
           <li>
-            <a href="#" className="hover:border-b-4 border-black">
+            <a href="#" className="hover:border-b-2 border-black">
               About Us
             </a>
           </li>
