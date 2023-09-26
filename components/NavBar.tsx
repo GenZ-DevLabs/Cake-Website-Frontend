@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { FaSearch, FaCartPlus, FaUser } from "react-icons/fa";
 
-export default function NavBar() {
+interface NavBarProps {}
+
+export default function NavBar(props: NavBarProps) {
   return (
     <nav className="bg-secondary flex items-center justify-between ">
       <div className="flex ml-[50px] lg:ml-[100px] 2xl:ml-[200px]">
