@@ -12,10 +12,10 @@ const config: Config = {
         primary: "#E2007A", //background color (Dark Pink)        
         secondary: "#E83395", //background color (Light Pink)    
         tertiary: "#BCBBBB", //background color (Gray)    
-        text: "#15000B", //paragraph color
-        primarybutton: "#FFE662", //button BG
-        primarybuttontext: "#E2007A", //button text color
-        secondaybuttontext: "#15000B", //secondary button text color
+        sectionbg: "#E8E5E6",
+        text: "#15000B", //paragraph color (purple brown)
+        primarybutton: "#FFE662", //button BG (Yellow)
+        primarybuttontext: "#E2007A", //button text color (pink)
         warning: "#fbbd23",
         error: "#dc2626",
       },
@@ -25,7 +25,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("daisyui"), require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
 
   daisyui: {
     themes: true, // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
